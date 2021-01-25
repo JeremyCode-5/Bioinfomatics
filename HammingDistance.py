@@ -2,7 +2,6 @@ import sys
 def hamming_distance(str1,str2):
 	hd = 0
 	if len(str1) != len(str2):
-		print "the two strings different length ERROR"
 		return None
 	for i in range(len(str1)):
 		if str1[i] != str2[i]:
@@ -21,4 +20,4 @@ if __name__ == '__main__':
 		str2 = 'GAGCGATTAAGCGTGACAGCCCCAGGGAACCCACAAAACGTGATCGCAGTCCATCCGATCATACA'
 
 	hamDis = hamming_distance(str1,str2)
-	print hamDis
+	print (hamDis)
